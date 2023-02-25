@@ -28,7 +28,7 @@
 #include "btrtl.h"
 #include "btmtk.h"
 
-#define VERSION "0.8"
+#define VERSION "0.9"
 
 static bool disable_scofix;
 static bool force_scofix;
@@ -426,6 +426,8 @@ static const struct usb_device_id blacklist_table[] = {
 	{ USB_DEVICE(0x04c5, 0x165c), .driver_info = BTUSB_REALTEK |
 						     BTUSB_WIDEBAND_SPEECH },
 	{ USB_DEVICE(0x04ca, 0x4006), .driver_info = BTUSB_REALTEK |
+						     BTUSB_WIDEBAND_SPEECH },
+	{ USB_DEVICE(0x0cb8, 0xc549), .driver_info = BTUSB_REALTEK |
 						     BTUSB_WIDEBAND_SPEECH },
 
 	/* Realtek 8852CE Bluetooth devices */
