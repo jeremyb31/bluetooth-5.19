@@ -52,6 +52,7 @@ enum btrtl_chip_id {
 	CHIP_ID_8852A = 18,
 	CHIP_ID_8852B = 20,
 	CHIP_ID_8852C = 25,
+	CHIP_ID_8851B = 36,
 };
 
 struct id_table {
